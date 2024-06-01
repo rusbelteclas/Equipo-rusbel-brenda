@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Acerca de - UTIM</title>
     <style>
         body {
@@ -12,10 +13,31 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #00539C;
+            background-color: #007BFF;
             color: white;
-            padding: 1rem 0;
-            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
         }
         .container {
             width: 80%;
@@ -23,7 +45,10 @@
             padding: 2rem 0;
         }
         h1 {
-            color: #00539C;
+            color: #fff;
+        }
+        h2 {
+            color: #056925;
         }
         p {
             line-height: 1.6;
@@ -35,27 +60,38 @@
 </head>
 <body>
     <header>
-        <h1>Universidad Tecnologica de Izucar de Matamoros</h1>
+        <h1>Universidad Tecnologica de Izucar de matamoros</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="container">
         
         <section class="history">
-            <h1>Historia</h1>
+            <h2>Historia</h2>
             <p>La UTIM es creada en septiembre de 1997, con 3 programas educativos y 98 estudiantes.</p>
         </section>
         <section class="objetivo">
-            <h1>Objetivo</h1>
+            <h2>Objetivo</h2>
             <p>Formar profesionistas en el ámbito de las Tecnologías de la Información técnicamente habilitados, capaces de contribuir al desarrollo de su región de influencia.</p>
         </section>
         <section class="mission">
-            <h1>Misión</h1>
+            <h2>Misión</h2>
             <p>Formar Profesionistas con sentido humanista, competentes y comprometidos con el desarrollo sostenible de la región mixteca poblana a través de la investigación y la transferencia de tecnología, que satisfagan las necesidades del entorno social y económico, con base en programas educativos reconocidos por su calidad.
             </p>
         </section>
         <section class="vision">
-            <h1>Visión</h1>
+            <h2>Visión</h2>
             <p>Ser reconocida como la máxima casa de estudios en educación superior tecnológica de la región mixteca poblana, comprometida con la transformación de su entorno.</p>
         </section>
     </div>
+    <footer>
+        <p>&copy;2024 Nuestro Sitio Web Educativo</p>
+    </footer>
 </body>
 </html>
